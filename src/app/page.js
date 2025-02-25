@@ -21,6 +21,7 @@ export default function Home() {
               num={item.num}
               name={item.name}
               bgColor={item.bgColor}
+              img={item.img}
             />
           ))}
         </div>
