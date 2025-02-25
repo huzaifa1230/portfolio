@@ -14,8 +14,41 @@
   }
 }
 
+/* body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
 body {
   color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Disable all scrolling */
+  margin: 0;
+  padding: 0;
+}
+/* Hide scrollbar for all major browsers */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+/* Slow scrolling effect */
+.smooth-scroll {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent default scrolling */
 }

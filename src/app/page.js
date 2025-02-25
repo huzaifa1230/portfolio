@@ -1,13 +1,29 @@
-import Image from "next/image";
+"use client";
+import { useEffect } from "react";
+import Card from "./components/Card";
+import homeCards from "./data";
 
 export default function Home() {
+  useEffect(() => {
+    document.documentElement.style.overflow = "hidden";
+    return () => {
+      document.documentElement.style.overflow = "auto";
+    };
+  }, []);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <div>
-        <h1>here i will add animated text</h1>
-      </div>
-      <div>
-        <h1>this will display after completion of splash time</h1>
+    <div className="h-screen w-screen flex items-center">
+      <div className="w-screen overflow-x-scroll hide-scrollbar smooth-scroll flex items-center ">
+        <div className="flex flex-nowrap ">
+          {homeCards.map((item) => (
+            <Card
+              key={item.num}
+              num={item.num}
+              name={item.name}
+              bgColor={item.bgColor}
+            />
+          ))}
+        </div>
       </div>
     </div>
   );
