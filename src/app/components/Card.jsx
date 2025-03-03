@@ -2,15 +2,27 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 
-export default function Card({ num, name, bgColor, img }) {
+export default function Card({ num, name, desc, bgColor, img, bgImg }) {
   const [isHovered, setIsHovered] = useState(false);
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(
+      `/details/${num}?name=${encodeURIComponent(
+        name
+      )}&desc=${desc}&bgImg=${encodeURIComponent(
+        bgImg
+      )}&bgColor=${encodeURIComponent(bgColor)}`
+    );
+  };
 
   return (
     <motion.div
       className="relative w-[29rem] min-h-screen border-r-2 border-gray-300 bg-white text-black flex flex-col gap-10 justify-center items-start pl-[2%] pr-[5%] cursor-pointer overflow-hidden"
       onHoverStart={() => setIsHovered(true)}
       onHoverEnd={() => setIsHovered(false)}
+      onClick={handleClick}
       animate={{
         backgroundColor: isHovered ? bgColor : "#ffffff",
         color: isHovered ? "#ffffff" : "#000000",

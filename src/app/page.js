@@ -20,8 +20,10 @@ export default function Home() {
               key={item.num}
               num={item.num}
               name={item.name}
+              desc={item.desc}
               bgColor={item.bgColor}
               img={item.img}
+              bgImg={item.bgImg}
             />
           ))}
         </div>
