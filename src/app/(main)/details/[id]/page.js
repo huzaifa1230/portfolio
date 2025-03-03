@@ -10,8 +10,9 @@ export default function Page() {
   const bgImg = searchParams.get("bgImg") || "/bg1.jpg";
   const bgColor = searchParams.get("bgColor") || "#000000";
 
-  const [isVisible, setIsVisible] = useState(true);
+  const [isVisible, setIsVisible] = useState(false);
   const [lastScroll, setLastScroll] = useState(0);
+  const [hasScrolled, setHasScrolled] = useState(false);
 
   useEffect(() => {
     document.documentElement.style.overflow = "hidden";
@@ -20,9 +21,12 @@ export default function Page() {
     const handleScroll = (event) => {
       event.preventDefault();
 
-      // Detect scroll direction
       const currentScroll = window.scrollY || 0;
-      if (event.deltaY > 0) {
+
+      if (!hasScrolled) {
+        setHasScrolled(true); // Mark first scroll
+        setIsVisible(true); // Show content after first scroll
+      } else if (event.deltaY > 0) {
         setIsVisible(false); // Scrolling down → Hide content
       } else if (event.deltaY < 0) {
         setIsVisible(true); // Scrolling up → Show content
@@ -37,7 +41,7 @@ export default function Page() {
       document.documentElement.style.overflow = "";
       document.body.style.overflow = "";
     };
-  }, []);
+  }, [hasScrolled]);
 
   return (
     <div className="relative w-screen h-screen text-white overflow-hidden">
@@ -49,12 +53,12 @@ export default function Page() {
 
       {/* Content Animates on Scroll */}
       <motion.div
-        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4  "
-        initial={{ opacity: 1, y: 0 }}
-        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }} // Show/Hide animation
+        className="absolute inset-0 flex flex-col items-center justify-center text-center px-4"
+        initial={{ opacity: 0, y: 50 }}
+        animate={isVisible ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}
         transition={{ ease: "easeOut", duration: 0.5 }}
       >
-        <div className=" p-5 rounded-lg" style={{ backgroundColor: bgColor }}>
+        <div className="p-5 rounded-lg" style={{ backgroundColor: bgColor }}>
           <h1 className="text-5xl font-bold mb-4">{name}</h1>
           <p className="text-lg max-w-2xl">{description}</p>
         </div>
