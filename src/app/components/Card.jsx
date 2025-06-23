@@ -4,18 +4,12 @@ import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 
-export default function Card({ num, title, desc, bgColor, img, bgImg }) {
+export default function Card({ num, title, desc, bgColor, img, index, bgImg }) {
   const [isHovered, setIsHovered] = useState(false);
   const router = useRouter();
 
   const handleClick = () => {
-    router.push(
-      `/details/${num}?title=${encodeURIComponent(
-        title
-      )}&desc=${desc}&bgImg=${encodeURIComponent(
-        bgImg
-      )}&bgColor=${encodeURIComponent(bgColor)}`
-    );
+    router.push(`/details/${index + 1}`);
   };
 
   return (

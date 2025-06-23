@@ -1,0 +1,42 @@
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden; /* Disable all scrolling */
+  margin: 0;
+  padding: 0;
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Hide scrollbar in Chrome/Safari */
+}
+
+.hide-scrollbar {
+  -ms-overflow-style: none; /* Hide scrollbar in IE/Edge */
+  scrollbar-width: none; /* Hide scrollbar in Firefox */
+}
+.smooth-scroll {
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.scroll-item {
+  scroll-snap-align: start;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden; /* Prevent default scrolling */
+}

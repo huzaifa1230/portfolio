@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import Card from "./components/Card";
 // import homeCards from "./data";
 import { projects } from "../config/index";
+import "../style.css";
 
 export default function Home() {
   useEffect(() => {
@@ -23,8 +24,9 @@ export default function Home() {
               title={item.title}
               desc={item.desc}
               bgColor={item.bgColor}
+              index={index}
               img={item.cover}
-              bgImg={item.bgImg}
+              // bgImg={item.bgImg}
             />
           ))}
         </div>
