@@ -16,7 +16,11 @@ export const projects = [
       "Tailwind",
     ],
     cover: "/projectsCover/llm.png",
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+    screenshots: [
+      "/projectsCover/llm/llm2.png",
+      "/projectsCover/llm/llm3.png",
+      "/projectsCover/llm/llm4.png",
+    ],
     bgColor: "#2F4F4F",
     recordings: "/projectsCover/recordings/LLMrecord.mp4",
   },
@@ -36,7 +40,13 @@ export const projects = [
       "Tailwind",
     ],
     cover: "/projectsCover/hrm.png",
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+    screenshots: [
+      "/projectsCover/hrm/hrm.png",
+      "/projectsCover/hrm/hrm2.png",
+      "/projectsCover/hrm/hrm3.png",
+      "/projectsCover/hrm/hrm4.png",
+      "/projectsCover/hrm/hrm5.png",
+    ],
     bgColor: "#CD853F",
     recordings:
       "/projectsCover/recordings/Interview sceduling system - admin panel.mp4",
@@ -49,7 +59,11 @@ export const projects = [
     techStack: ["Next.js", "Fast Api", "Python", "Framer motion", "Tailwind"],
     cover: "/projectsCover/crypto.png",
 
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+    screenshots: [
+      "/projectsCover/cryptopulse/crypto.png",
+      "/projectsCover/cryptopulse/crypto2.png",
+      "/projectsCover/cryptopulse/crypto3.png",
+    ],
     bgColor: "#1E90FF",
     recordings: "/projectsCover/recordings/CryptoPulse.mp4",
   },
@@ -67,7 +81,13 @@ export const projects = [
       "Tailwind",
     ],
     cover: "/projectsCover/green.png",
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+
+    screenshots: [
+      "/projectsCover/green/green1.png",
+      "/projectsCover/green/green2.png",
+      "/projectsCover/green/green3.png",
+      "/projectsCover/green/green4.png",
+    ],
     bgColor: "#FF8C00",
     recordings:
       "/projectsCover/recordings/Muhammad Huzaifa Irshad upwork project greenboom.mp4",

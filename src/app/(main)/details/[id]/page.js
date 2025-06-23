@@ -7,7 +7,7 @@ import { ArrowLeft, Play, ExternalLink, Github, Globe } from "lucide-react";
 import { projects } from "../../../../config/index";
 
 export default function Page({ params: asyncParams }) {
-  const [showVideo, setShowVideo] = useState(false);
+  const [showVideo, setShowVideo] = useState(true);
   const mainDisplayRef = useRef(null);
   const router = useRouter();
   const params = use(asyncParams);
@@ -118,7 +118,13 @@ export default function Page({ params: asyncParams }) {
             <div ref={mainDisplayRef} className="mb-8">
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
                 {showVideo && projectData.recordings ? (
-                  <video controls className="w-full h-full object-contain">
+                  <video
+                    controls
+                    autoPlay
+                    muted
+                    loop
+                    className="w-full h-full object-contain"
+                  >
                     <source src={projectData.recordings} type="video/mp4" />
                     Your browser does not support the video tag.
                   </video>
@@ -126,7 +132,7 @@ export default function Page({ params: asyncParams }) {
                   <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <Image
                       src={
-                        projectData.screenshots?.[0]?.url ||
+                        projectData.screenshots?.[0] ||
                         projectData.cover ||
                         projectData.img ||
                         "/api/placeholder/1200/800"
@@ -145,7 +151,7 @@ export default function Page({ params: asyncParams }) {
                 <div className="p-6 border-t border-gray-100">
                   <div className="flex items-center justify-between">
                     <h3 className="text-lg font-semibold text-gray-900">
-                      {showVideo && projectData.videoUrl
+                      {showVideo && projectData.recordings
                         ? "Demo Video"
                         : "Project Overview"}
                     </h3>
@@ -190,8 +196,8 @@ export default function Page({ params: asyncParams }) {
                         }`}
                       >
                         <Image
-                          src={screenshot.url || "/api/placeholder/800/600"}
-                          alt={screenshot.alt || `Screenshot ${index + 1}`}
+                          src={screenshot || "/api/placeholder/800/600"}
+                          alt={"hi"}
                           fill
                           className="object-contain p-4"
                         />
