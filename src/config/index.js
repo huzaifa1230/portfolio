@@ -18,7 +18,7 @@ export const projects = [
     cover: "/projectsCover/llm.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#2F4F4F",
-    recordings: [""],
+    recordings: "/projectsCover/recordings/LLMrecord.mp4",
   },
   {
     id: 2,
@@ -38,7 +38,8 @@ export const projects = [
     cover: "/projectsCover/hrm.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#CD853F",
-    recordings: [""],
+    recordings:
+      "/projectsCover/recordings/Interview sceduling system - admin panel.mp4",
   },
   {
     id: 3,
@@ -50,7 +51,7 @@ export const projects = [
 
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#1E90FF",
-    recordings: [""],
+    recordings: "/projectsCover/recordings/CryptoPulse.mp4",
   },
   {
     id: 4,
@@ -68,7 +69,8 @@ export const projects = [
     cover: "/projectsCover/green.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#FF8C00",
-    recordings: [""],
+    recordings:
+      "/projectsCover/recordings/Muhammad Huzaifa Irshad upwork project greenboom.mp4",
   },
   {
     id: 5,
@@ -79,7 +81,8 @@ export const projects = [
     cover: "/projectsCover/weride.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#000000",
-    recordings: [""],
+
+    recordings: "/projectsCover/recordings/We ride.mp4",
   },
   {
     id: 6,
@@ -90,7 +93,8 @@ export const projects = [
     cover: "/projectsCover/leave.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#87CEEB",
-    recordings: [""],
+    recordings:
+      "/projectsCover/recordings/Interview sceduling system - admin panel.mp4",
   },
   {
     id: 7,
@@ -108,6 +112,8 @@ export const projects = [
     cover: "/projectsCover/empire.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
     bgColor: "#2F4F4F",
-    recordings: [""],
+    recordings:
+      "/projectsCover/recordings/Empire Link car rental MERN Stack.mp4",
+    // recordings: "../../public/projectsCover/recordings/We ride.mp4",
   },
 ];

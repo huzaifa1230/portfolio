@@ -119,16 +119,11 @@ export default function Page({ params }) {
             {/* Main Display - Screen Recording */}
             <div ref={mainDisplayRef} className="mb-8">
               <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-                {showVideo && projectData.videoUrl ? (
-                  <div className="relative aspect-video bg-gray-900 flex items-center justify-center">
-                    <div className="text-white text-center">
-                      <Play size={64} className="mx-auto mb-4 opacity-50" />
-                      <p className="text-lg">Screen Recording Preview</p>
-                      <p className="text-sm opacity-75">
-                        Video player would be implemented here
-                      </p>
-                    </div>
-                  </div>
+                {showVideo && projectData.recordings ? (
+                  <video controls className="w-full h-full object-contain">
+                    <source src={projectData.recordings} type="video/mp4" />
+                    Your browser does not support the video tag.
+                  </video>
                 ) : (
                   <div className="relative aspect-video bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center">
                     <Image
@@ -156,7 +151,7 @@ export default function Page({ params }) {
                         ? "Demo Video"
                         : "Project Overview"}
                     </h3>
-                    {projectData.videoUrl && (
+                    {projectData.recordings && (
                       <button
                         onClick={() => setShowVideo(!showVideo)}
                         className="flex items-center gap-2 px-4 py-2 text-blue-600 hover:bg-blue-50 rounded-lg transition-colors"
