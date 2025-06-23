@@ -1,20 +1,18 @@
 "use client";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { useState, useRef } from "react";
+import { useState, useRef, use } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Play, ExternalLink, Github, Globe } from "lucide-react";
 import { projects } from "../../../../config/index";
 
-export default function Page({ params }) {
+export default function Page({ params: asyncParams }) {
   const [showVideo, setShowVideo] = useState(false);
   const mainDisplayRef = useRef(null);
   const router = useRouter();
+  const params = use(asyncParams);
 
   // Debug logging to see what we're getting
-  console.log("Params:", params);
-  console.log("Projects array:", projects);
-  console.log("Projects length:", projects.length);
 
   // Get project data based on ID - handle both string and number IDs
   const projectId = parseInt(params.id) - 1; // Convert to 0-based index
