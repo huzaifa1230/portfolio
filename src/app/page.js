@@ -1,7 +1,8 @@
 "use client";
 import { useEffect } from "react";
 import Card from "./components/Card";
-import homeCards from "./data";
+// import homeCards from "./data";
+import { projects } from "../config/index";
 
 export default function Home() {
   useEffect(() => {
@@ -14,15 +15,15 @@ export default function Home() {
   return (
     <div className="h-screen w-screen flex items-center">
       <div className="w-screen overflow-x-scroll hide-scrollbar smooth-scroll flex items-center ">
-        <div className="flex flex-nowrap ">
-          {homeCards.map((item) => (
+        <div className="flex flex-nowrap">
+          {projects.map((item, index) => (
             <Card
-              key={item.num}
-              num={item.num}
-              name={item.name}
+              key={index}
+              num={(index + 1).toString().padStart(2, "0")}
+              title={item.title}
               desc={item.desc}
               bgColor={item.bgColor}
-              img={item.img}
+              img={item.cover}
               bgImg={item.bgImg}
             />
           ))}

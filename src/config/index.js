@@ -13,13 +13,15 @@ export const projects = [
       "JWT",
       "Tailwind",
     ],
+    cover: "/projectsCover/llm.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#2F4F4F",
     recordings: [""],
   },
   {
     id: 2,
     title:
-      "Interview scheduling system - Admin Dashboard with decent Animations",
+      "Interview scheduling system - Admin Dashboard & Backend for mobile app too",
     description:
       "The Interview Scheduling System is a feature-rich web application designed to streamline and automate the hiring process for companies and recruiters. Built using the MERN stack, the platform centers around a highly interactive Admin Dashboard crafted with React, Tailwind CSS, and Framer Motion, offering a smooth and engaging user experience with elegant animations and transitions. The application provides a dynamic analytics dashboard displaying time-series data visualizations such as user growth and platform engagement, helping admins make data-driven decisions. It supports Stripe integration to manage multiple subscription tiers, allowing businesses to scale their usage based on their hiring needs. A standout feature is the automated interview scheduling system, powered by Puppeteer, which not only schedules interviews but also extracts company-related data from external sources, streamlining the pre-screening workflow. For real-time communication, the platform integrates Firebase-powered chat, enabling seamless interaction between candidates and recruiters. Additionally, a community discussion forum fosters networking, collaboration, and shared learning within the hiring ecosystem. To ensure robust security and role separation, the system implements role-based access control, allowing sub-admins to manage specific operations while maintaining data integrity and access boundaries. This project combines operational efficiency, strong UI/UX design, and automation — creating a comprehensive and scalable solution for modern recruitment workflows.",
     techStack: [
@@ -31,7 +33,9 @@ export const projects = [
       "Stripe",
       "Tailwind",
     ],
+    cover: "/projectsCover/hrm.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#CD853F",
     recordings: [""],
   },
   {
@@ -40,7 +44,10 @@ export const projects = [
     description:
       "CryptoPulse is a cutting-edge web application designed to empower users with AI-driven insights for cryptocurrency trading. The platform intelligently analyzes real-time market data to identify high-potential coins, specifically those with a projected 2%+ weekly gain, helping users make smarter trading decisions with confidence. Built with a visually stunning React.js frontend, the application integrates Framer Motion animations to deliver a smooth, interactive user experience. From subtle transitions to responsive elements, every aspect of the UI was crafted to ensure a polished and premium feel across all devices. On the backend, the project utilizes Python-based data analysis scripts to ingest, process, and analyze live cryptocurrency data from various sources. The AI algorithms then generate predictions based on historical trends, momentum analysis, and pattern recognition, offering users actionable insights in an easy-to-understand format.",
     techStack: ["Next.js", "Fast Api", "Python", "Framer motion", "Tailwind"],
+    cover: "/projectsCover/crypto.png",
+
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#1E90FF",
     recordings: [""],
   },
   {
@@ -56,7 +63,9 @@ export const projects = [
       "JWT",
       "Tailwind",
     ],
+    cover: "/projectsCover/green.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#FF8C00",
     recordings: [""],
   },
   {
@@ -65,7 +74,9 @@ export const projects = [
     description:
       "Robo Taxi is a futuristic ride-booking platform designed for autonomous vehicle transportation. Built using Next.js, the web application enables users to easily book robotaxi rides through a seamless and responsive interface. My primary role in this project was to lead the frontend development, focusing on creating an intuitive user experience and a visually polished UI. I implemented authentication flows on the client side and used Tailwind CSS to ensure the layout remained fully responsive across all screen sizes—from mobile to desktop. The project involved translating high-fidelity Figma designs into production-ready code, with special attention to user experience, accessibility, and layout consistency. The user interface was designed to be clean and minimal, while still delivering a modern, high-tech feel appropriate for a cutting-edge mobility service. Animations, component structure, and layout responsiveness were carefully handled to improve user engagement and conversion. This project allowed me to apply and further refine my skills in Next.js, Tailwind CSS, and responsive frontend development, while collaborating closely with designers and backend developers in a real-world product setting.",
     techStack: ["Next.js", "Tailwind"],
+    cover: "/projectsCover/weride.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#000000",
     recordings: [""],
   },
   {
@@ -74,7 +85,9 @@ export const projects = [
     description:
       "This Leave Management System is a responsive web application designed to streamline attendance tracking and leave management within organizations. I was responsible for building the frontend interface, using React, Tailwind CSS, and ShadCN UI components to create a clean, intuitive, and professional user experience. On the employee side, the system allows users to: Perform daily check-in and check-out Log break times View a monthly attendance summary Apply for leaves directly through the dashboard On the admin side, the dashboard provides a comprehensive view of: Employee attendance records Leave management tools for reviewing and approving/rejecting leave requests The interface was designed with usability and responsiveness in mind, ensuring smooth interaction across all devices. I focused on crafting reusable components, enhancing UX, and aligning closely with real-world HR workflows. This project demonstrates my ability to translate business requirements into a structured, user-friendly frontend while utilizing modern design systems and best practices in UI development.",
     techStack: ["React.js", "ShadCN", "Tailwind"],
+    cover: "/projectsCover/leave.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#87CEEB",
     recordings: [""],
   },
   {
@@ -90,7 +103,9 @@ export const projects = [
       "Stripe",
       "Tailwind",
     ],
+    cover: "/projectsCover/empire.png",
     screenshots: ["screenshot1.png", "screenshot2.png"],
+    bgColor: "#2F4F4F",
     recordings: [""],
   },
 ];

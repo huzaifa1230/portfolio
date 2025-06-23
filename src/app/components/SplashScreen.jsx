@@ -92,7 +92,7 @@ import { motion, AnimatePresence, easeInOut } from "framer-motion";
 import { useState, useEffect } from "react";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 
-const words = ["Welcome", "To", "My Website"];
+const words = ["Welcome", "To", "My Portfolio"];
 
 const SplashScreen = ({ onComplete }) => {
   const [index, setIndex] = useState(-1);
