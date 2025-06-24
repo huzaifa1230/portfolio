@@ -99,7 +99,12 @@ export const projects = [
       "Robo Taxi is a futuristic ride-booking platform designed for autonomous vehicle transportation. Built using Next.js, the web application enables users to easily book robotaxi rides through a seamless and responsive interface. My primary role in this project was to lead the frontend development, focusing on creating an intuitive user experience and a visually polished UI. I implemented authentication flows on the client side and used Tailwind CSS to ensure the layout remained fully responsive across all screen sizes—from mobile to desktop. The project involved translating high-fidelity Figma designs into production-ready code, with special attention to user experience, accessibility, and layout consistency. The user interface was designed to be clean and minimal, while still delivering a modern, high-tech feel appropriate for a cutting-edge mobility service. Animations, component structure, and layout responsiveness were carefully handled to improve user engagement and conversion. This project allowed me to apply and further refine my skills in Next.js, Tailwind CSS, and responsive frontend development, while collaborating closely with designers and backend developers in a real-world product setting.",
     techStack: ["Next.js", "Tailwind"],
     cover: "/projectsCover/weride.png",
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+    screenshots: [
+      "/projectsCover/weride/we1.png",
+      "/projectsCover/weride/we2.png",
+      "/projectsCover/weride/we3.png",
+      "/projectsCover/weride/we4.png",
+    ],
     bgColor: "#000000",
 
     recordings: "/projectsCover/recordings/We ride.mp4",
@@ -111,10 +116,14 @@ export const projects = [
       "This Leave Management System is a responsive web application designed to streamline attendance tracking and leave management within organizations. I was responsible for building the frontend interface, using React, Tailwind CSS, and ShadCN UI components to create a clean, intuitive, and professional user experience. On the employee side, the system allows users to: Perform daily check-in and check-out Log break times View a monthly attendance summary Apply for leaves directly through the dashboard On the admin side, the dashboard provides a comprehensive view of: Employee attendance records Leave management tools for reviewing and approving/rejecting leave requests The interface was designed with usability and responsiveness in mind, ensuring smooth interaction across all devices. I focused on crafting reusable components, enhancing UX, and aligning closely with real-world HR workflows. This project demonstrates my ability to translate business requirements into a structured, user-friendly frontend while utilizing modern design systems and best practices in UI development.",
     techStack: ["React.js", "ShadCN", "Tailwind"],
     cover: "/projectsCover/leave.png",
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+    screenshots: [
+      "/projectsCover/emp/emp1.png",
+      "/projectsCover/emp/emp2.png",
+      "/projectsCover/emp/emp3.png",
+      "/projectsCover/emp/emp4.png",
+    ],
     bgColor: "#87CEEB",
-    recordings:
-      "/projectsCover/recordings/Interview sceduling system - admin panel.mp4",
+    recordings: "/projectsCover/recordings/Leave management.mp4",
   },
   {
     id: 7,
@@ -130,7 +139,13 @@ export const projects = [
       "Tailwind",
     ],
     cover: "/projectsCover/empire.png",
-    screenshots: ["screenshot1.png", "screenshot2.png"],
+    screenshots: [
+      "/projectsCover/empire/empire1.png",
+      "/projectsCover/empire/empire2.png",
+      "/projectsCover/empire/empire3.png",
+      "/projectsCover/empire/empire4.png",
+      "/projectsCover/empire/empire5.png",
+    ],
     bgColor: "#2F4F4F",
     recordings:
       "/projectsCover/recordings/Empire Link car rental MERN Stack.mp4",
