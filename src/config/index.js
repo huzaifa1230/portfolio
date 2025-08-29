@@ -1,4 +1,6 @@
 export const projects = [
+
+
   {
     id: 1,
     title: "LLM Chat - AI chatbot with advanced features",
