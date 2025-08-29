@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div className="h-screen w-screen flex items-center">
       <div className="w-screen overflow-x-scroll hide-scrollbar smooth-scroll flex items-center ">
-        <div className="flex flex-nowrap">
+        <div className="flex flex-nowrap ">
           {projects.map((item, index) => (
             <Card
               key={index}
